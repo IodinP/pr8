@@ -1,2 +1,9 @@
-for i in range(10):
-    print('*' * 10)
+size = 10
+
+for i in range(size):
+    for j in range(size):
+        if i == 0 or i == size - 1 or j == 0 or j == size - 1:
+            print('*', end='')  # Рисуем * по периметру
+        else:
+            print(' ', end='') 
+    print()  
